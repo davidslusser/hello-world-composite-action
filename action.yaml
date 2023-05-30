@@ -50,8 +50,6 @@ runs:
     - name: "Run tests"
       run: "coverage run --source=${{ inputs.src }} -m pytest ${{ inputs.options }}"
       shell: bash
-    - run: goodbye.sh
-      shell: bash
     - name: "Push to Coveralls"
       run: "coveralls"
       shell: bash
