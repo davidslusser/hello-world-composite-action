@@ -8,7 +8,7 @@ inputs:
   options:
     required: true
     type: string
-    default: ""    
+    default: "--cov=${{ inputs.src }}"    
   pip_install_command: 
     description: "command used to install python dependancies"
     required: true
